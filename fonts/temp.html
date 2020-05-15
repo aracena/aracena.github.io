@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./img/favicon.png" rel="shortcut icon"/>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport"/>
+        <style>
+            @font-face {
+                font-family
+                :
+                 
+                "VeneerClean-Reg"
+                ;
+                
+                                          
+                src
+                :
+                 
+                url("../fonts/VeneerClean-Reg.ttf")
+                 
+                format("truetype")
+                ;
+            }
+            @font-face {
+                font-family
+                :
+                 
+                "CooperBeckerPosterBlack"
+                ;
+                
+                                          
+                src
+                :
+                 
+                url("../fonts/Cooper Becker Poster Black Regular.ttf")
+                 
+                format("truetype")
+                ;
+            }
+            .bp1-mobile {
+                width               : 100%;
+                min-width           : 320px;
+                height              : 100vh;
+                min-height          : 1024px;
+                position            : relative;
+                overflow            : hidden;
+                margin              : 0px;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                background-color    : rgba(255, 255, 255, 1.0);
+                opacity             : 1.0;
+            }
+            a {
+                text-decoration     : none;
+            }
+            div {
+                -webkit-text-size-adjust: none;
+            }
+            .anima-full-width-a {
+                width               : 100%;
+            }
+            .anima-full-height-a {
+                height              : 100%;
+            }
+            div {
+                -webkit-text-size-adjust: none;
+            }
+            .bp1-mobile .bp1-rectangle {
+                background-color    : rgba(247, 247, 247, 1.0);
+                top                 : 54px;
+                height              : 44px;
+                box-sizing          : border-box;
+                width               : calc(100.00% + 18px);
+                position            : absolute;
+                margin              : 0;
+                left                : -5px;
+                border-style        : solid;
+                border-width        : 1px;
+                border-color        : rgba(230, 230, 230, 1.0);
+                transform           : rotate(0deg);
+                opacity             : 1.0;
+            }
+            .bp1-mobile .bp1-group {
+                background-color    : rgba(255,255,255,0.0);
+                right               : 8px;
+                top                 : 66px;
+                height              : 17px;
+                width               : 60px;
+                position            : absolute;
+                margin              : 0;
+                transform           : rotate(0deg);
+                opacity             : 1.0;
+            }
+            .bp1-mobile .bp1-group .bp1-zoom {
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 2px;
+                height              : auto;
+                width               : auto;
+                position            : absolute;
+                margin              : 0;
+                left                : 25px;
+                transform           : rotate(0deg);
+                opacity             : 1.0;
+                font-family         : "HelveticaNeue", Helvetica, Arial, serif;
+                font-size           : 13.0px;
+                color               : rgba(117, 117, 117, 1.0);
+                text-align          : left;
+                line-height         : 15.0px;
+            }
+            .bp1-mobile .bp1-group .bp1-bitmap {
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0px;
+                height              : 15px;
+                width               : 11px;
+                position            : absolute;
+                margin              : 0;
+                left                : 1px;
+                transform           : rotate(0deg);
+                opacity             : 1.0;
+            }
+            .bp1-mobile .bp1-line {
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 246px;
+                height              : 3px;
+                width               : 1187px;
+                position            : absolute;
+                margin              : 0;
+                left                : -433px;
+                transform           : rotate(0deg);
+                opacity             : 1.0;
+            }
+            .bp1-mobile .bp1-standuponline {
+                background-color    : rgba(255,255,255,0.0);
+                margin-left         : 4px;
+                height              : auto;
+                width               : 163px;
+                margin-right        : -4px;
+                position            : relative;
+                transform           : rotate(0deg);
+                opacity             : 1.0;
+                font-family         : "CooperBeckerPosterBlack", Helvetica, Arial, serif;
+                font-size           : 22.0px;
+                color               : rgba(11, 11, 10, 1.0);
+                text-align          : center;
+                letter-spacing      : -0.88px;
+                line-height         : 26.0px;
+            }
+            .bp1-mobile .bp1-standuponline-layout-container {
+                pointer-events      : none;
+                flex-direction      : column;
+                top                 : 14px;
+                align-items         : center;
+                height              : auto;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                display             : flex;
+                left                : 0;
+            }
+            .bp1-mobile .bp1-standuponline-layout-container > * {
+                pointer-events      : auto;
+            }
+            .bp1-mobile .bp1-proximoshowmayo2 {
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 69px;
+                height              : auto;
+                width               : auto;
+                position            : absolute;
+                margin              : 0;
+                left                : 5px;
+                transform           : rotate(0deg);
+                opacity             : 1.0;
+                font-family         : "HelveticaNeue", Helvetica, Arial, serif;
+                font-size           : 13.0px;
+                color               : rgba(38, 38, 38, 1.0);
+                text-align          : center;
+                letter-spacing      : -0.24px;
+                line-height         : 15.0px;
+            }
+            .bp1-mobile .bp1-a7138558622250442109568476539618849585627136o {
+                background-color    : rgba(255,255,255,0.0);
+                margin-left         : 16px;
+                height              : 100%;
+                width               : 1024px;
+                margin-right        : -16px;
+                position            : relative;
+                transform           : rotate(0deg);
+                opacity             : 1.0;
+            }
+            .bp1-mobile .bp1-a7138558622250442109568476539618849585627136o-layout-container {
+                pointer-events      : none;
+                flex-direction      : column;
+                top                 : 98px;
+                align-items         : center;
+                height              : 1024px;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                display             : flex;
+                left                : 0;
+            }
+            .bp1-mobile .bp1-a7138558622250442109568476539618849585627136o-layout-container > * {
+                pointer-events      : auto;
+            }
+            .bp1-mobile .bp1-showsprevios {
+                background-color    : rgba(255,255,255,0.0);
+                margin-left         : -4px;
+                height              : auto;
+                width               : auto;
+                margin-right        : 4px;
+                position            : relative;
+                transform           : rotate(0deg);
+                opacity             : 1.0;
+                font-family         : "HelveticaNeue-Medium", Helvetica, Arial, serif;
+                font-size           : 14.0px;
+                color               : rgba(255, 255, 255, 1.0);
+                text-align          : left;
+                letter-spacing      : 0.16px;
+                line-height         : 17.0px;
+                text-decoration     : underline;
+            }
+            .bp1-mobile .bp1-showsprevios-layout-container {
+                pointer-events      : none;
+                flex-direction      : column;
+                top                 : 605px;
+                align-items         : center;
+                height              : auto;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                display             : flex;
+                left                : 0;
+            }
+            .bp1-mobile .bp1-showsprevios-layout-container > * {
+                pointer-events      : auto;
+            }
+            .bp1-mobile .bp1-group4 {
+                background-color    : rgba(255,255,255,0.0);
+                margin-right        : 0px;
+                height              : 50px;
+                width               : 171px;
+                margin-top          : -18px;
+                margin-left         : -0px;
+                position            : relative;
+                margin-bottom       : 18px;
+                transform           : rotate(0deg);
+                opacity             : 1.0;
+            }
+            .bp1-mobile .bp1-group4-layout-container {
+                pointer-events      : none;
+                flex-direction      : column;
+                top                 : 0;
+                align-items         : center;
+                height              : 100%;
+                width               : 100%;
+                justify-content     : center;
+                position            : absolute;
+                margin              : 0;
+                display             : flex;
+                left                : 0;
+            }
+            .bp1-mobile .bp1-group4-layout-container > * {
+                pointer-events      : auto;
+            }
+            .bp1-mobile .bp1-group4 .bp1-rectangle1 {
+                background-color    : rgba(216, 216, 216, 1.0);
+                top                 : 0px;
+                height              : 50px;
+                box-sizing          : border-box;
+                width               : 171px;
+                position            : absolute;
+                margin              : 0;
+                left                : 0px;
+                border-radius       : 5px;
+                border-style        : solid;
+                border-width        : 1px;
+                border-color        : rgba(150, 150, 150, 1.0);
+                transform           : rotate(0deg);
+                opacity             : 1.0;
+            }
+            .bp1-mobile .bp1-group4 .bp1-comofunciona {
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 17px;
+                height              : auto;
+                width               : 166px;
+                position            : absolute;
+                margin              : 0;
+                left                : 2px;
+                transform           : rotate(0deg);
+                opacity             : 1.0;
+                font-family         : "VeneerClean-Reg", Helvetica, Arial, serif;
+                font-size           : 16.0px;
+                color               : rgba(0, 0, 0, 1.0);
+                text-align          : center;
+                letter-spacing      : 1.26px;
+                line-height         : 23.0px;
+            }
+            .bp1-mobile .bp1-group3 {
+                background-color    : rgba(255,255,255,0.0);
+                position            : relative;
+                height              : 100%;
+                width               : 171px;
+                transform           : rotate(0deg);
+                opacity             : 1.0;
+            }
+            .bp1-mobile .bp1-group3-layout-container {
+                pointer-events      : none;
+                flex-direction      : column;
+                top                 : 537px;
+                align-items         : center;
+                height              : 50px;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                display             : flex;
+                left                : 0;
+            }
+            .bp1-mobile .bp1-group3-layout-container > * {
+                pointer-events      : auto;
+            }
+            .bp1-mobile .bp1-group3 .bp1-rectangle1 {
+                background-color    : rgba(0, 0, 0, 0.8);
+                top                 : 0px;
+                height              : 50px;
+                box-sizing          : border-box;
+                width               : 171px;
+                position            : absolute;
+                margin              : 0;
+                left                : 0px;
+                border-radius       : 5px;
+                border-style        : solid;
+                border-width        : 1px;
+                border-color        : rgba(41, 41, 41, 1.0);
+                transform           : rotate(0deg);
+                opacity             : 1.0;
+            }
+            .bp1-mobile .bp1-group3 .bp1-group2 {
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 16px;
+                height              : 20px;
+                width               : 165px;
+                position            : absolute;
+                margin              : 0;
+                left                : 3px;
+                transform           : rotate(0deg);
+                opacity             : 1.0;
+            }
+            .bp1-mobile .bp1-group3 .bp1-group2 .bp1-comprartickets {
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0px;
+                height              : auto;
+                width               : 166px;
+                position            : absolute;
+                margin              : 0;
+                left                : -1px;
+                transform           : rotate(0deg);
+                opacity             : 1.0;
+                font-family         : "VeneerClean-Reg", Helvetica, Arial, serif;
+                font-size           : 16.0px;
+                color               : rgba(255, 255, 255, 1.0);
+                text-align          : center;
+                letter-spacing      : 1.26px;
+                line-height         : 23.0px;
+            }
+            .bp1-mobile .bp1-rectangle2 {
+                background-color    : rgba(255, 255, 255, 1.0);
+                bottom              : 0px;
+                height              : 23px;
+                width               : calc(100.00% + 704px);
+                position            : absolute;
+                margin              : 0;
+                left                : -348px;
+                transform           : rotate(0deg);
+                opacity             : 1.0;
+            }
+            .bp1-mobile .bp1-label1 {
+                background-color    : rgba(255,255,255,0.0);
+                margin-left         : 4px;
+                height              : auto;
+                width               : auto;
+                margin-right        : -4px;
+                position            : relative;
+                transform           : rotate(0deg);
+                opacity             : 1.0;
+                font-family         : "HelveticaNeue-Light", Helvetica, Arial, serif;
+                font-size           : 8.0px;
+                color               : rgba(0, 0, 0, 1.0);
+                text-align          : left;
+                letter-spacing      : 0.63px;
+                line-height         : 10.0px;
+            }
+            .bp1-mobile .bp1-label1-layout-container {
+                pointer-events      : none;
+                flex-direction      : column;
+                top                 : 1008px;
+                align-items         : center;
+                height              : auto;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                display             : flex;
+                left                : 0;
+            }
+            .bp1-mobile .bp1-label1-layout-container > * {
+                pointer-events      : auto;
+            }
+            /* .anima-animate-appear prefix for appear animations */
+            .anima-animate-appear {
+                opacity             : 0;
+                display             : block;
+                -webkit-animation   : anima-reveal 0.3s ease-in-out 1 normal forwards;
+                -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+                -o-animation        : anima-reveal 0.3s ease-in-out 1 normal forwards;
+                animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+            }
+            .anima-animate-disappear {
+                opacity             : 1;
+                display             : block;
+                -webkit-animation   : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+                -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+                -o-animation        : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+                animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+            }
+            .anima-animate-nodelay {
+                -webkit-animation-delay: 0;
+                -moz-animation-delay: 0;
+                -o-animation-delay  : 0;
+                animation-delay     : 0;
+            }
+            @-webkit-keyframes anima-reveal {
+                0%
+                
+                   
+                  
+                {
+                      opacity: 0;
+                    }
+                
+                  
+                    
+                  
+                100%
+                
+                   
+                  
+                {
+                      opacity: 1;
+                    }
+            }
+            @-moz-keyframes anima-reveal {
+                0%
+                
+                   
+                  
+                {
+                      opacity: 0;
+                    }
+                
+                  
+                    
+                  
+                100%
+                
+                   
+                  
+                {
+                      opacity: 1;
+                    }
+            }
+            @-o-keyframes anima-reveal {
+                0%
+                
+                   
+                  
+                {
+                      opacity: 0;
+                    }
+                
+                  
+                    
+                  
+                100%
+                
+                   
+                  
+                {
+                      opacity: 1;
+                    }
+            }
+            @keyframes anima-reveal {
+                0%
+                
+                   
+                  
+                {
+                      opacity: 0;
+                    }
+                
+                  
+                    
+                  
+                100%
+                
+                   
+                  
+                {
+                      opacity: 1;
+                    }
+            }
+            .anima-component-wrapper,
+            .anima-component-wrapper * {
+                pointer-events      : none;
+            }
+            .anima-component-wrapper a *,
+            .anima-component-wrapper a,
+            .anima-component-wrapper input,
+            .anima-component-wrapper video,
+            .anima-component-wrapper iframe,
+            .anima-listeners-active,
+            .anima-listeners-active * {
+                pointer-events      : auto;
+            }
+            .anima-hidden,
+            .anima-hidden * {
+                visibility          : hidden;
+                pointer-events      : none;
+            }
+            .anima-smart-layers-pointers,
+            .anima-smart-layers-pointers * {
+                pointer-events      : auto;
+                visibility          : visible;
+            }
+            .anima-component-wrapper.anima-not-ready,
+            .anima-component-wrapper.anima-not-ready * {
+                visibility          : hidden !important;
+            }
+            .anima-listeners-active-click,
+            .anima-listeners-active-click * {
+                cursor              : pointer;
+            }
+            .anima-word-break {
+                overflow-wrap       : break-word;
+                word-wrap           : break-word;
+                word-break          : break-all;
+                word-break          : break-word;
+            }
+        </style>
+        <meta content="AnimaApp.com - Design to code, Automated." name="author"/>
+    </head>
+    <body style="margin: 0;
+ background: rgba(255, 255, 255, 1.0);">
+        <input id="anPageName" name="page" type="hidden" value="mobile"/>
+        <div class="bp1-mobile anima-word-break ">
+            <div class="bp1-rectangle">
+            </div>
+            <div class="bp1-group">
+                <div class="bp1-zoom">
+                    Zoom
+                </div>
+                <img alt="Image" class="bp1-bitmap" src="./mobile-bitmap@2x.png"/>
+            </div>
+            <img alt="Image" class="bp1-line" src="./mobile-line.png"/>
+            <div class="bp1-standuponline-layout-container">
+                <div class="bp1-standuponline">
+                    Standup Online
+                </div>
+            </div>
+            <div class="bp1-proximoshowmayo2">
+                Proximo Show: Mayo 26, 2020
+            </div>
+            <div class="bp1-a7138558622250442109568476539618849585627136o-layout-container">
+                <img alt="Image" class="bp1-a7138558622250442109568476539618849585627136o" src="./mobile-7138558622250442109568476539618849585627136o.png"/>
+            </div>
+            <div class="bp1-showsprevios-layout-container">
+                <div class="bp1-showsprevios">
+                    Shows previos
+                </div>
+            </div>
+            <div class="bp1-group4-layout-container">
+                <div class="bp1-group4">
+                    <div class="bp1-rectangle1">
+                    </div>
+                    <div class="bp1-comofunciona">
+                        COMO FUNCIONA
+                    </div>
+                </div>
+            </div>
+            <div class="bp1-group3-layout-container">
+                <div class="bp1-group3">
+                    <div class="bp1-rectangle1">
+                    </div>
+                    <div class="bp1-group2">
+                        <div class="bp1-comprartickets">
+                            COMPRAR TICKETS
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bp1-rectangle2">
+            </div>
+            <div class="bp1-label1-layout-container">
+                <div class="bp1-label1">
+                    Â© 2020 ATOMS INC. Â  TERMS &amp; CONDITIONS Â Â  PRIVACY POLICY
+                </div>
+            </div>
+        </div>
+        <link href="https://aracena.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
+        <!-- Scripts -->
+        <!-- End of Scripts -->
+    </body>
+</html>
